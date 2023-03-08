@@ -8,15 +8,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- icons -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+<!-- aos -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- my CSS -->
     <link rel="stylesheet" href="style.css " />
     <title>syafiq | Ardiaz</title>
   </head>
   <body id="home">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top"  data-aos="fade-down">
       <div class="container">
         <a class="navbar-brand" href="#">Syafiq Ardiaz</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,10 +63,10 @@
   </div>
   </div>
   <div class="row justify-content-center fs-5 text-center">
-    <div class="col-md-4">
+    <div class="col-md-4" data-aos="fade-right">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam odio rerum quasi eum temporibus? Officiis placeat earum asperiores velit itaque.</p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4"data-aos="fade-left">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque architecto nesciunt, corrupti beatae nihil accusantium fugit voluptatibus obcaecati odit tempora.</p>
     </div>
   </div>
@@ -180,6 +184,15 @@
 </footer>
 <!-- akhir foother -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- aos -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyJdxjQOqM7aMicPpnmTgQmmdMPf8RyZIRDMMLkQnaiUTqOaIwhzEM9j3mccDMfzFG5/exec'
