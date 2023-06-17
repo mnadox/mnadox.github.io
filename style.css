@@ -83,17 +83,10 @@ section {
 
 /* di bawah sambungan dari swap slider */
 
-.container {
-  max-width: 124rem;
+#tranding {
+  /* max-width: 124rem; */
   padding: 0 1rem;
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 800px) {
-  .container {
-    /* max-width: 124rem; */
-    padding: 0 0rem !important;
-  }
 }
 
 .text-center {
