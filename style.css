@@ -8,11 +8,10 @@
   list-style-type: none;
   text-decoration: none;
 }
-
 :root {
   --primary: #ffffff;
   --white: #ffffff;
-  --bg: #f3f3f3;
+  --bg: #ebebeb;
 }
 
 html {
@@ -62,8 +61,7 @@ body {
   background: var(--bg);
 }
 
-/* ditas dari slider swap */
-
+/* ini css saya */
 .jumbotron {
   padding-top: 6rem;
   background-color: #e2edff;
@@ -80,13 +78,19 @@ section {
 .carousel {
   padding-top: 5rem;
 }
+/* ini akhir css saya */
 
-/* di bawah sambungan dari swap slider */
-
-#tranding {
-  /* max-width: 124rem; */
+.container {
+  max-width: 124rem;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    /* max-width: 124rem; */
+    padding: 0 0rem !important;
+  }
 }
 
 .text-center {
@@ -255,5 +259,3 @@ section {
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
-
-/* batas akhir sambungan swap slider */
