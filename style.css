@@ -38,30 +38,16 @@ html {
   }
 }
 
-::-webkit-scrollbar {
-  width: 1.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background: #797979;
-  transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222224;
-}
-
-::-webkit-scrollbar-track {
-  background: #f9f9f9;
-}
-
 body {
   font-size: 1.6rem;
   background: var(--bg);
+  overflow: hidden;
 }
-body::-webkit-scrollbar {
-  display: none;
+@media (max-width: 767px) {
+  /* Ganti 'body' dengan selector yang sesuai jika ingin membatasi efek ini hanya pada elemen tertentu */
+  body {
+    overflow: hidden; /* Menghilangkan scrollbar pada mode mobile */
+  }
 }
 
 /* ini css saya */
@@ -81,6 +67,10 @@ section {
 .carousel {
   padding-top: 5rem;
 }
+
+.custom-navbar {
+  height: 60px;
+}
 /* ini akhir css saya */
 
 .container {
@@ -91,7 +81,7 @@ section {
 
 @media only screen and (max-width: 800px) {
   .container {
-    /* max-width: 124rem; */
+    max-width: 124rem;
     padding: 0 0rem !important;
   }
 }
